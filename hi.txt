@@ -1,3 +1,763 @@
 hey
 hi
 and the cloning is done sucessfully
+commands 
+student@PRLAB-8:~/2023506015$  
+student@PRLAB-8:~/2023506015$ cd
+student@PRLAB-8:~$ cd 6015
+student@PRLAB-8:~/6015$ cd 
+student@PRLAB-8:~$ cd 6015 Mytest
+bash: cd: too many arguments
+student@PRLAB-8:~$ cd 6015 
+student@PRLAB-8:~/6015$ cd Mytest
+student@PRLAB-8:~/6015/Mytest$ cd prlab
+student@PRLAB-8:~/6015/Mytest/prlab$ git add .
+student@PRLAB-8:~/6015/Mytest/prlab$ git push main orgin
+error: src refspec orgin does not match any
+error: failed to push some refs to 'main'
+student@PRLAB-8:~/6015/Mytest/prlab$ vi k.txt
+student@PRLAB-8:~/6015/Mytest/prlab$ git add .
+student@PRLAB-8:~/6015/Mytest/prlab$ git commit -m "another file test no 3"
+[main 2e89654] another file test no 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 k.txt
+student@PRLAB-8:~/6015/Mytest/prlab$ git push main orgin
+error: src refspec orgin does not match any
+error: failed to push some refs to 'main'
+student@PRLAB-8:~/6015/Mytest/prlab$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Sathiyasm3/prlab.git
+   0b1d05a..2e89654  main -> main
+student@PRLAB-8:~/6015/Mytest/prlab$ git rm k.txt
+rm 'k.txt'
+student@PRLAB-8:~/6015/Mytest/prlab$ git commit -m "Delete k.txt"
+[main 8611d65] Delete k.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 k.txt
+student@PRLAB-8:~/6015/Mytest/prlab$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 220 bytes | 220.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Sathiyasm3/prlab.git
+   2e89654..8611d65  main -> main
+student@PRLAB-8:~/6015/Mytest/prlab$ git restore k.txt
+error: pathspec 'k.txt' did not match any file(s) known to git
+student@PRLAB-8:~/6015/Mytest/prlab$ git rm h.txt
+rm 'h.txt'
+student@PRLAB-8:~/6015/Mytest/prlab$ git restore k.txt
+error: pathspec 'k.txt' did not match any file(s) known to git
+student@PRLAB-8:~/6015/Mytest/prlab$ git restore h.txt
+error: pathspec 'h.txt' did not match any file(s) known to git
+student@PRLAB-8:~/6015/Mytest/prlab$ git rm h.txt
+fatal: pathspec 'h.txt' did not match any files
+student@PRLAB-8:~/6015/Mytest/prlab$ git restore h.txt
+error: pathspec 'h.txt' did not match any file(s) known to git
+student@PRLAB-8:~/6015/Mytest/prlab$ 
+student@PRLAB-8:~/6015/Mytest/prlab$ history
+    1  java -version
+    2  ~java -version
+    3  sudo apt update
+    4  sudo apt install openjdk-8-jdk
+    5  su - itadmin
+    6  ls
+    7  cd 2023506015
+    8  ls
+    9  ls
+   10  cd 2023506015
+   11  cd 6015
+   12  mkdir ads
+   13  cd ads
+   14  cd
+   15  vi tries.cpp
+   16  g++ tries.cpp
+   17  ./a.out
+   18  vi splay.cpp
+   19  g++ splay.cpp
+   20  ./a.out
+   21  vi avl.cpp
+   22  g++ avl.cpp
+   23  ./a.out
+   24  vi dyntable.cpp
+   25  g++ avl.cpp
+   26  ./a.out
+   27  vi binarycout.cpp
+   28  gcc binarycout.cpp
+   29  vi binarycout.cpp
+   30  gcc binarycout.cpp
+   31  g++ binarycout.cpp
+   32  ./a.out
+   33  vi skiplist.cpp
+   34  g++ skiplist.cpp
+   35  ./a.out
+   36  ls
+   37  vi tries.cpp
+   38  g++ tries.cpp
+   39  ./a.out
+   40  ls
+   41  cd music
+   42  music
+   43  apt install music-bin
+   44  ls
+   45  cd6016
+   46  cd 6016
+   47  vi tries.cpp
+   48  cd ads
+   49  ls
+   50  cd ..
+   51  cd ~
+   52  mkdir ads6016
+   53  cd ads6016
+   54  ls
+   55  clear
+   56  vi fibonacciHeap.cpp
+   57  g++ fibonacciHeap.cpp 
+   58  vi fibonacciHeap.cpp
+   59  g++ fibonacciHeap.cpp 
+   60  vi fibonacciHeap.cpp
+   61  g++ fibonacciHeap.cpp 
+   62  vi fibonacciHeap.cpp
+   63  g++ fibonacciHeap.cpp 
+   64  ./a.out
+   65  vi fibonacciHeap1.cpp
+   66  g++ fibonacciHeap1.cpp
+   67  ./a.out
+   68  ls
+   69  vi dynamicTable.cpp
+   70  g++ dynamicTable.cpp
+   71  /a.out
+   72  ./a.out
+   73  vi bcaggregate.cpp
+   74  g++ bcaggregate.cpp
+   75  vi bcpotential.cpp
+   76  g++ bcpotential.cpp
+   77  vi deterministicsl.cp
+   78  rm  deterministicsl.cp
+   79  vi  deterministicsl.cpp
+   80  g++ deterministicsl.cpp
+   81  vi avltree.cpp
+   82  g++ avltree.cpp 
+   83  python3 --version 
+   84  jupyter notebook
+   85  pip install notebook
+   86  su -itadmin
+   87  su - itadmin
+   88  jupyter notebook
+   89  su - itadmin
+   90  python3 logistic_regressor.py
+   91  python logistic_regressor.py
+   92  python3 logistic_regressor.py
+   93  pip3 install pandas
+   94  su-itadmin
+   95  sudo apt install pip
+   96  su - itadmin
+   97  su -itadmin
+   98  su - itadmin
+   99  ls
+  100  cd ads6016
+  101  ls
+  102  vi treap.cpp
+  103  g++ treap.cpp 
+  104  vi treap.cpp
+  105  g++ treap.cpp 
+  106  ./a.out
+  107  vi treap.cpp
+  108  g++ treap.cpp 
+  109  ./a.ot
+  110  ./a.out
+  111  vi treap.cpp
+  112  g++ treap.cpp 
+  113  vi treap.cpp
+  114  g++ treap.cpp 
+  115  ./a.out
+  116  vi treap.cpp
+  117  g++ treap.cpp 
+  118  ./a.out
+  119  vi treap.cpp
+  120  pwd
+  121  cd 4553
+  122  mkdir 4553
+  123  cd 4553
+  124  vi stack.c
+  125  cc stack.c
+  126  ./a.out
+  127  vi stack.c
+  128  zzzz i9~~g6;./[ -=[;
+  129  vi stack.c
+  130  cc stack.c
+  131  ./a.out
+  132  su-itadmin
+  133  su - itadmin
+  134  source dllab/bin/activate
+  135  su - itadmin
+  136  gcc fibonacciheap.cpp
+  137  g++ fibonacciheap.cpp
+  138  gpp fibonacciheap.cpp
+  139  vi fibonacciheap.cpp
+  140  vi fibonacciheap1.cpp
+  141  vi fibonacciHeap1.cpp
+  142  gpp fibonacciHeap1.cpp
+  143  g++ fibonacciHeap1.cpp
+  144  ./a.out
+  145  vi fibonacciHeap1.cpp
+  146  vi treaps.cpp
+  147  cd..
+  148  cd
+  149  su -assess
+  150  su -access
+  151  acess
+  152  /clear
+  153  clear
+  154  cd 2023506015
+  155  mkdir 2023506015
+  156  mkdir 6015
+  157  su
+  158  su -student
+  159  clear
+  160  cd ads6016
+  161  vi treap.cpp
+  162  clear
+  163  cd 2023506015
+  164  cd
+  165  cd 2023506015
+  166  clear
+  167  vi randowm gusseser
+  168  vi rg.cpp
+  169  g++ rg.cpp
+  170  ./a.out
+  171  vi rg.cpp
+  172  g++ rg.cpp
+  173  ./a.out
+  174  wq
+  175  vi rg.cpp
+  176  g++ rg.cpp
+  177  ./a.out
+  178  wq
+  179  vi rg.cpp
+  180  g++ rg.cpp
+  181  vi rg.cpp
+  182  g++ rg.cpp
+  183  ./a.out
+  184  vi rg.cpp
+  185  g++ rg.cpp
+  186  ./a.out
+  187  vi rg.cpp
+  188  g++ rg.cpp
+  189  ./a.out
+  190  vi rg.cpp
+  191  g++ rg.cpp
+  192  ./a.out
+  193  g++ rg.cpp
+  194  vi rg.cpp
+  195  g++ rg.cpp
+  196  ./a.out
+  197  g++ rg.cpp
+  198  vi rg.cpp
+  199  g++ rg.cpp
+  200  ./a.out
+  201  vi rg.cpp
+  202  g++ rg.cpp
+  203  vi rg.cpp
+  204  g++ rg.cpp
+  205  ./a.out
+  206  vi rg.cpp
+  207  g++ rg.cpp
+  208  ./a.out
+  209  vi rg.cpp
+  210  g++ rg.cpp
+  211  ./a.out
+  212  vi rg.cpp
+  213  g++ rg.cpp
+  214  vi rg.cpp
+  215  g++ rg.cpp
+  216  vi rg.cpp
+  217  g++ rg.cpp
+  218  ./a.out
+  219  vi rg.cpp
+  220  g++ rg.cpp
+  221  ./a.out
+  222  vi rg.cpp
+  223  g++ rg.cpp
+  224  ./a.out
+  225  vi rg.cpp
+  226  g++ rg.cpp
+  227  ./a.out
+  228  vi rg.cpp
+  229  g++ rg.cpp
+  230  vi rg.cpp
+  231  ./a.out
+  232  vi rg.cpp
+  233  g++ rg.cpp
+  234  vi rg.cpp
+  235  g++ rg.cpp
+  236  vi rg.cpp
+  237  g++ rg.cpp
+  238  ./a.out
+  239  vi rg.cpp
+  240  g++ rg.cpp
+  241  ./a.out
+  242  wq
+  243  vi rg.cpp
+  244  g++ rg.cpp
+  245  wq
+  246  vi rg.cpp
+  247  g++ rg.cpp
+  248  vi rg.cpp
+  249  g++ rg.cpp
+  250  vi rg.cpp
+  251  g++ rg.cpp
+  252  ./a.out
+  253  vi rg.cpp
+  254  g++ rg.cpp
+  255  vi rg.cpp
+  256  g++ rg.cpp
+  257  ./a.out
+  258  vi rg.cpp
+  259  g++ rg.cpp
+  260  7
+  261  vi rg.cpp
+  262  ls
+  263  cd ads6016
+  264  ls
+  265  vi disjoint_set.cpp
+  266  vi treap.cpp
+  267  g++ treap.cpp
+  268  ./a.out
+  269  vi disjoint_set.cpp
+  270  g++ disjoint_set.cpp
+  271  vi disjoint_set.cpp
+  272  g++ disjoint_set.cpp
+  273  vi disjoint_set.cpp
+  274  g++ disjoint_set.cpp
+  275  ./a.out
+  276  vi dus.cpp
+  277  g++ dus.cpp
+  278  ./a.out
+  279  vi disjoint_set.cpp
+  280  g++ disjoint_set.cpp
+  281  ./a.out
+  282  strace
+  283  strace -h
+  284  strace -p
+  285  ltrace
+  286  top
+  287  clear
+  288  ls
+  289  fibonacciheap1.cpp
+  290  vi fibonacciheap1.cpp
+  291  vi fibonacciheap.cpp
+  292  vi treap.cpp
+  293  vi treaps.cpp
+  294  rm treaps.cpp
+  295  ls
+  296  vi avltree.cpp
+  297  vi bcpotential.cpp 
+  298  vi bcaggregate.cpp 
+  299  vi dynamicTable.cpp 
+  300  vi deterministicsl.cpp 
+  301  vi btree.cpp
+  302  cd ..
+  303  cd ~
+  304  ls
+  305  cd /~
+  306  cd /
+  307  cd 6015
+  308  ls
+  309  cd home
+  310  ls
+  311  cd student
+  312  ls
+  313  cd 6015
+  314  ls
+  315  cd ..
+  316  cd 2023506015
+  317  ls
+  318  clear
+  319  cd ..
+  320  ls
+  321  cd /
+  322  ls
+  323  clear
+  324  ls
+  325  cd home
+  326  ls
+  327  cd student
+  328  ls
+  329  vi splay.cpp
+  330  mv splay.cpp ads6016
+  331  cd ads6016
+  332  ls
+  333  cd .
+  334  cd ..
+  335  ls
+  336  vi tries.cpp
+  337  cd ads6016
+  338  ls
+  339  mv splay.cpp home
+  340  ls
+  341  cd ..
+  342  l
+  343  clear
+  344  ls
+  345  cd ads6016
+  346  ls
+  347  cd home
+  348  vi home
+  349  clear
+  350  cd ..
+  351  ls
+  352  cd /
+  353  ls
+  354  cd boot
+  355  ls
+  356  cd ..
+  357  ls
+  358  cd bin
+  359  ls
+  360  cd ..
+  361  cd home
+  362  cd student
+  363  clear
+  364  /
+  365  //
+  366  \\
+  367  \\
+  368  ls
+  369  man man l
+  370  kill
+  371  kill kill
+  372  kill 203
+  373  pid
+  374  man pid
+  375  man kill
+  376  open
+  377  xdg-open
+  378  write
+  379  read
+  380  ls
+  381  close
+  382  create
+  383  pcreate
+  384  sys
+  385  clear
+  386  vi binarysearch.c
+  387  cc  binarysearch.c
+  388  cd 4553
+  389  vi binarysearch.c
+  390  cc  binarysearch.c
+  391  ./a.out
+  392  vi binarysearch1.c
+  393  cc binarysearch1.c
+  394  ./a.out
+  395  cc  binarysearch.c
+  396  ./a.out
+  397  vi binarysearch1.c
+  398  cc  binarysearch.c
+  399  vi binarysearch.c
+  400  cd 2023506015
+  401  cd
+  402  cd 2023506015
+  403  curl -fsSL https://ollama.com/install.sh | sh
+  404  su - admin
+  405  su - assess
+  406  gcc piperead.c
+  407  ./a.out
+  408  gcc piperead.c
+  409  ./a.out
+  410  gcc piperead.c
+  411  ./a.out
+  412  gcc piperead.c
+  413  ./a.out
+  414  #include <stdio.h>
+  415  #include <stdlib.h>
+  416  int main() {
+  417  }
+  418  sudo apt-get install testdisk
+  419  su - admin
+  420  su - PROJECTLAB
+  421  su - PROJECT LAB
+  422  su - PROJECTLAB
+  423  SU - USER
+  424  su - USER
+  425  su - user
+  426  su -Projectlab
+  427  su -projectlab
+  428  su - projectlab
+  429  # apt-get install git 
+  430  # add-apt-repository ppa:git-core/ppa
+  431  # apt update; apt install git
+  432  $ apt-get install git 
+  433  apt-get install git 
+  434  cd 6015
+  435  gcc pipewrite.c
+  436  ./a.out
+  437  gcc pipewrite.c
+  438  ./a.out
+  439  gcc pipewrite.c
+  440  ./a.out
+  441  cd 6015
+  442  ls
+  443  gcc dba.c
+  444  ./a.out
+  445  gcc dba.c
+  446  sudo itadmin
+  447  su - itadmin
+  448  su
+  449  su itadmin
+  450  su -itadmin
+  451  su - itadmin
+  452  sudo itadmin
+  453  su -itadmin
+  454  su - itadmin
+  455  vi 2023506015
+  456  cd 2023506015
+  457  ls
+  458  vi leftist.cpp
+  459  vi tries.cpp
+  460  vi fiboheap.cpp
+  461  vi treap.cpp
+  462  vi randown
+  463  rm randown
+  464  rm a.out
+  465  vi rg.cpp
+  466  vi treap.cpp
+  467  g++ treap.cpp
+  468  vi treap.cpp
+  469  g++ treap.cpp
+  470  vi treap.cpp
+  471  g++ treap.cpp
+  472  ./a.out
+  473  vi treap.cpp
+  474  g++ treap.cpp
+  475  vi treap.cpp
+  476  g++ treap.cpp
+  477  ./a.out
+  478  vi treap.cpp
+  479  g++ treap.cpp
+  480  ./a.out
+  481  vi treap.cpp
+  482  g++ treap.cpp
+  483  ./a.out
+  484  vi treap.cpp
+  485  cd ..
+  486  cd \
+  487  cd /
+  488  cd \
+  489  ls
+  490  ps outs
+  491  psaux
+  492  ps aux
+  493  tree 
+  494  clear
+  495  ls
+  496  cd ..
+  497  ls
+  498  cd
+  499  a
+  500  s
+  501  c
+  502  d
+  503  cd
+  504  ls
+  505  clear
+  506  ls
+  507  cd ads6016
+  508  ls
+  509  vi biconnectivity.cpp
+  510  g++ biconnectivity.cpp
+  511  vi biconnectivity.cpp
+  512  color
+  513  mcolor 
+  514  apt install mblaze
+  515  yes
+  516  clear
+  517  ls
+  518  rm home
+  519  ls
+  520  vi biconnectivity.cpp
+  521  g++ biconnectivity.cpp
+  522  vi biconnectivity.cpp
+  523  g++ biconnectivity.cpp
+  524  ./a.out
+  525  vi biconnectivity.cpp
+  526  g++ biconnectivity.cpp
+  527  ./a.out
+  528  cd ..
+  529  mkdir os6016
+  530  cd os6016
+  531  ls
+  532  vi 8ex1.c
+  533  g++ 8ex1.c
+  534  ./a.out
+  535  vi 8ex2.c
+  536  g++ 8ex2.c
+  537  ./a.out
+  538  vi 8ex3.c
+  539  g== 8ex3.c
+  540  g++ 8ex3.c
+  541  vi 8ex3.c
+  542  g++ 8ex3.c
+  543  ./a.out
+  544  vi 8ex4.c
+  545  g++ 8ex4.c
+  546  ./a.out
+  547  vi 8ex5.c
+  548  g++ 8ex5.c
+  549  ./a.out
+  550  clear
+  551  cd ..
+  552  cd ads6016
+  553  ls
+  554  git --version
+  555  python --version
+  556  python --v
+  557  python 
+  558  python3 --version
+  559  clear
+  560  ls
+  561  cd 6015
+  562  vi filealloc.c
+  563  gcc filealloc.c
+  564  ./a.out
+  565  vi pipe.c
+  566  gcc pipe.c
+  567  ./a.out
+  568  gcc filealloc.c
+  569  ./a.out
+  570  vi filealloc.c
+  571  gcc filealloc.c
+  572  ./a.out
+  573  vi filealloc.c
+  574  ./a.out
+  575  gcc filealloc.c
+  576  ./a.out
+  577  wq
+  578  ./a.out
+  579  vi filealloc.c
+  580  gcc filealloc.c
+  581  ./a.out
+  582  vi filealloc.c
+  583  ls
+  584  git --version
+  585  git clone https://github.com/Sathiyasm3/nn.git
+  586  git status
+  587  git config --global user.name "Sathiyamurthy"
+  588  git config --global user.email "Sathiyasm3"
+  589  git config --global user.name "Sathiyasm3"
+  590  git config --global user.name "websm3@gmail.com"
+  591  ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
+  592  git init
+  593  ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
+  594  cat ~/.ssh/id_rsa.pub
+  595  mkdir Mytest
+  596  cd Mytest
+  597  git init
+  598  echo "This is a git repo" > README.md
+  599  git add README.md
+  600  git commit -m "Initial commit"
+  601  git remote add origin https://github.com/Sathiyasm3/Mytest.git
+  602  git push -u origin master
+  603  ssh-keygen -t rsa -b 2048
+  604  git push -u origin master
+  605  git clone https://github.com/Sathiyasm3/nn.git
+  606  git push -u origin master
+  607  git add README.md
+  608  git push -u origin
+  609  git pull
+  610  git push -u origin
+  611  git add README.md
+  612  git push -u origin
+  613  git push -u origin
+  614  git pull
+  615  git push -u origin
+  616  echo "hello" wite.txt
+  617  echo "hello" >wite.txt
+  618  git add write.txt
+  619  echo "hello" >wite.md
+  620  git add write.md
+  621  git add write
+  622  git push -u origin
+  623  git commit
+  624  git push -u origin
+  625  git commit -"hello"
+  626  git push -u origin
+  627  git push --set-upstream origin master
+  628  vi pipe.c
+  629  gcc dlprev.c
+  630  ./a.out
+  631  gcc pipe.c
+  632  ./a.out
+  633  ls
+  634  ll
+  635  ld
+  636  ssh-keygen -t rsa -b 4096 -C "websm3@gmail.com"
+  637  eval "$(ssh-agent -s)"
+  638  ssh-add ~/.ssh/id_rsa
+  639  cat ~/.ssh/id_rsa.pub
+  640  ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr... websm3@gmail.com
+  641  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCyDAb/xomJha+J9vs+XOunndn9hpqy6VNP2OEjJacxM5Ny5/PLE24TeGO2AId6VAJUaUrtiAxNYtNCIZh2kZrHJjyD1xNr5yW2zupvTTbFr+kTA/GbbL6TTRHyeG2zL94bYOHxOoLL5DFD1R3kG1jT6Avyf9kwrAxXB1XjNDUi8N5DnhdI2N/YtlspoFQHIRU/1yCmFGaNeIDzIP1eBV9waWn6jAXfgFnk/zWfJxrsv9K2k5m5WK1n16WoXalEVOCJ4Q2EZnVmBvz1parBxZOMxKKgeNkrUCVgTjb0f5bNqnWOJjT+XSS3GQQ3bheSFIds/4xUORrPkXcKxHNenNdjdRZVeRdlwFj20fEDmj5vIvPuw75LS0T0gR7TvTKlPqYZ7LE5vSsEoyX2NvqJ/aQ7KgQSxio2mo4YZLNhegRgnv2WAeJ1TetbojCBciIA7PuYXNPpq88IoioC5zwU0Yu2if9ZHbHzNtVXBMb15iRHg1jAfeTn4IOP7AUh4UYCRAevaXnsWXCs73g7nNT6ojXD2X4J+vIOKKc+wlUil7NRc9LPlc1I1dkhaaDq0xz9LM4mYJvC9bB4uZUkNHIhbNBwvm9bcmOJcOOidUOtVulMdSwYHJXiNs4V6+ZezXIzVRavmtXY+/ZVhhV6tH3JvsEpn3iZsIDwQkaC7/d1a/pGQw== websm3@gmail.com
+  642  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCyDAb/xomJha+J9vs+XOunndn9hpqy6VNP2OEjJacxM5Ny5/PLE24TeGO2AId6VAJUaUrtiAxNYtNCIZh2kZrHJjyD1xNr5yW2zupvTTbFr+kTA/GbbL6TTRHyeG2zL94bYOHxOoLL5DFD1R3kG1jT6Avyf9kwrAxXB1XjNDUi8N5DnhdI2N/YtlspoFQHIRU/1yCmFGaNeIDzIP1eBV9waWn6jAXfgFnk/zWfJxrsv9K2k5m5WK1n16WoXalEVOCJ4Q2EZnVmBvz1parBxZOMxKKgeNkrUCVgTjb0f5bNqnWOJjT+XSS3GQQ3bheSFIds/4xUORrPkXcKxHNenNdjdRZVeRdlwFj20fEDmj5vIvPuw75LS0T0gR7TvTKlPqYZ7LE5vSsEoyX2NvqJ/aQ7KgQSxio2mo4YZLNhegRgnv2WAeJ1TetbojCBciIA7PuYXNPpq88IoioC5zwU0Yu2if9ZHbHzNtVXBMb15iRHg1jAfeTn4IOP7AUh4UYCRAevaXnsWXCs73g7nNT6ojXD2X4J+vIOKKc+wlUil7NRc9LPlc1I1dkhaaDq0xz9LM4mYJvC9bB4uZUkNHIhbNBwvm9bcmOJcOOidUOtVulMdSwYHJXiNs4V6+ZezXIzVRavmtXY+/ZVhhV6tH3JvsEpn3iZsIDwQkaC7/d1a/pGQw
+  643  ~/.ssh/id_rsa.pub
+  644  git push -u origin master
+  645  ls
+  646  ll
+  647  gcc pipe.c
+  648  ./a.out
+  649  gcc bankalgo.c
+  650  gcc pipe.c
+  651  ./a.out
+  652  gcc dlprev.c
+  653  ./a.out
+  654  cd
+  655  cd 6015
+  656  cd Mytest
+  657  git version
+  658  git config --global user.name "Sathiyasm3"
+  659  git config --global useremail "websm3@gmail.com"
+  660  git config --global user.email "websm3@gmail.com"
+  661  git config --list
+  662  ssh-keygen -t rsa -b 4096 -C "websm3@gmail.com"
+  663  eval "$(ssh-agent -s)"
+  664  ssh-add ~/.ssh/id_rsa
+  665  xclip -sel clip < ~/.ssh/id_rsa.pub
+  666  sudo apt install xclip
+  667  ssh -T git@github.com
+  668  git clone https://github.com/Sathiyasm3/nn.git
+  669  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
+  670  git credential-cache exit
+  671  git clone https://github.com/Sathiyasm3/nn.git
+  672  git clone https://github.com/Sathiyasm3/new-.git
+  673  git clone https://github.com/Sathiyasm3/prlab.git
+  674  cd prlab
+  675  git status
+  676  git log
+  677  git add .
+  678  git commit -m "hi is added"
+  679  git push origin main
+  680  git remote set-url origin git@github.com:Sathiyasm3/prlab.git
+  681  git remote -v
+  682  git push origin main
+  683  git add .
+  684  git commit -m "hi is added"
+  685  git push origin main
+  686  git add .
+  687  git commit -m "result is added"
+  688  git push origin main
+  689  vi h.txt
+  690  git add .
+  691  git commit -m "another file is added"
+  692  git push origin main
+  693  exit
+  694  history
+
+hey
+hi
+and the cloning is done sucessfully
